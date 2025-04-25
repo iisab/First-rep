@@ -1,0 +1,200 @@
+.header {
+    display: flex; /* Distribuir elementos horizontalmente */
+    justify-content: space-between; /* Posicionar los elementos de forma equilibrada */
+    align-items: center; /* Centrar los elementos verticalmente */
+    background-color: white; /* Fondo blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border-bottom: 1px solid #ccc; /* Línea separadora abajo */
+  }
+  
+  /* Estilos para el logo (imagen del título y logo combinados) */
+  .logo img {
+    width: 200px; /* Tamaño ajustado de la imagen */
+    height: auto; /* Mantener proporciones */
+    display: block; /* Asegura que se comporte como un bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+  }
+  
+  /* Estilos para el menú de navegación */
+  .main-nav .nav-list {
+    list-style: none; /* Quitar las viñetas */
+    display: flex; /* Mostrar los elementos en fila */
+    gap: 20px; /* Separación entre los enlaces */
+    margin: 0; /* Quitar márgenes predeterminados */
+    padding: 0; /* Quitar el relleno predeterminado */
+  }
+  
+  .main-nav .nav-list li a {
+    text-decoration: none; /* Quitar subrayado */
+    color: black; /* Texto en color negro */
+    font-weight: normal; /* Mantener el peso de la fuente ligero */
+  }
+  
+  /* Estilos para el ícono de búsqueda */
+  .search img {
+    width: 24px; /* Tamaño del ícono */
+    height: auto; /* Mantener proporciones */
+    cursor: pointer; /* Mostrar que es clicable */
+  }
+  
+
+/* Estilos para la sección */
+.content-section {
+    position: relative; /* Necesario para posicionar elementos absolutos dentro */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajustar según contenido */
+  }
+  
+  .fondo{
+    margin-top:30px;
+    margin-left:200px;
+    margin-right:auto;
+  }
+  /* Estilos para el contenedor del enunciado */
+  .enunciado {
+    position: absolute; /* Colocar el enunciado en posición específica */
+    width: 896px; /* Ancho definido en el diseño de Figma */
+    height: auto; /* Mantener proporciones de la imagen */
+    left: 173px; /* Posicionamiento horizontal según el diseño */
+    top: 158px; /* Posicionamiento vertical según el diseño */
+  }
+  
+  .enunciado img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: auto; /* Mantener proporciones */
+  }
+  
+  /* Estilos para el botón */
+  .cta-button {
+    display: flex; /* Usar diseño flexible */
+    flex-direction: row; /* Alinear contenido en fila */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0px 20px; /* Espaciado interno */
+    
+    position: absolute; /* Posicionamiento absoluto */
+    width: 84px; /* Tamaño inicial del botón */
+    min-width: 84px; /* Ancho mínimo */
+    max-width: 480px; /* Ancho máximo para pantallas grandes */
+    height: 48px; /* Altura del botón */
+    left: 570px; /* Posicionamiento horizontal según diseño */
+    top: 306px; /* Posicionamiento vertical según diseño */
+    
+    background: #EBC747; /* Color de fondo amarillo */
+    border-radius: 8px; /* Bordes redondeados */
+    border: none; /* Eliminar bordes predeterminados */
+    cursor: pointer; /* Mostrar que se puede hacer clic */
+  }
+  
+  .cta-button:hover {
+    background: #d6b543; /* Color más oscuro al pasar el cursor */
+  }
+
+  .explorar {
+    /* Contenedor principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .coleccion img {
+    /* Estilo para la imagen de la colección */
+    width: 100%; /* Ajusta al ancho disponible */
+    max-width: 720px; /* Limita el ancho máximo */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 20px;
+  }
+  
+  .texto img {
+    /* Estilo para la imagen del texto */
+    width: 100%; /* Ajusta al ancho disponible */
+    max-width: 720px; /* Igual que la colección */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .vertodo img {
+    /* Estilo para la imagen del botón */
+    width: auto;
+    height: 50px; /* Ajusta el tamaño del botón según la imagen */
+    cursor: pointer; /* Añade un puntero para la interacción */
+    transition: transform 0.3s ease; /* Añade una animación */
+  }
+  
+  .vertodo img:hover {
+    /* Efecto hover en el botón */
+    transform: scale(1.05); /* Amplía ligeramente al pasar el mouse */
+  }
+
+.obras{
+  display: flex; /* Para alinearlas horizontalmente */
+  justify-content: center; /* Centra las imágenes */
+  gap: 20px; /* Espacio entre imágenes */
+  margin-top: 20px; /* Espacio entre texto y las imágenes */
+  border:none;
+  outline:none;
+}
+
+.obras img {
+  width: 247px; /* Ajusta el ancho de las imágenes */
+  height: auto; /* Mantiene la proporción */
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  outline:none;
+}
+
+.famosas{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  padding:70px;
+  list-style: none;
+  margin-top:50px;
+  margin-left: 200px;
+  margin-right:200px;
+
+}
+
+.famosas img{
+  margin-left:50px;
+}
+
+.obras2{
+  display: flex; /* Para alinearlas horizontalmente */
+  justify-content: center; /* Centra las imágenes */
+  gap: 20px; /* Espacio entre imágenes */
+  margin-top: 50px; /* Espacio entre texto y las imágenes */
+  border:none;
+  outline:none;
+}
+
+.obras2 img{
+  width: 380px; /* Ajusta el ancho de las imágenes */
+  height: auto; /* Mantiene la proporción */
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  outline:none;
+}
+
+.footerP{
+  margin-top:70px;
+  margin-left:433px;
+}
+
+.contacto{
+  margin-top:20px;
+  margin-left:133px;
+}
+
+.footerNAV{
+  margin-left:129px;
+
+}
+
+
+ 
